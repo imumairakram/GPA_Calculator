@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="shortcut icon" type="x-icon" href="brilliance.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>GPA Calculator</h1>
+    <div class="container">
+        <div class="semester" id="semester">
+            <form id="gpaForm">
+                <div class="course">
+                    <input type="text" placeholder="e.g. Course 1" class="course-name">
+                    <label for="grade1">Grade:</label>
+                    <select id="grade1" class="grade">
+                        <option value="4">A</option>
+                        <option value="3.5">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.5">C+</option>
+                        <option value="2">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    <label for="credits1">Credits:</label>
+                    <input type="number" id="credits1" class="credits">
+                </div>
+                <div class="course">
+                    <input type="text" placeholder="e.g. Course 2" class="course-name">
+                    <label for="grade1">Grade:</label>
+                    <select id="grade1" class="grade">
+                        <option value="4">A</option>
+                        <option value="3.5">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.5">C+</option>
+                        <option value="2">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    <label for="credits1">Credits:</label>
+                    <input type="number" id="credits1" class="credits">
+                </div>
+                <div class="course">
+                    <input type="text" placeholder="e.g. Course 3" class="course-name">
+                    <label for="grade1">Grade:</label>
+                    <select id="grade1" class="grade">
+                        <option value="4">A</option>
+                        <option value="3.5">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.5">C+</option>
+                        <option value="2">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    <label for="credits1">Credits:</label>
+                    <input type="number" id="credits1" class="credits">
+                </div>
+                <div class="course">
+                    <input type="text" placeholder="e.g. Course 4" class="course-name">
+                    <label for="grade1">Grade:</label>
+                    <select id="grade1" class="grade">
+                        <option value="4">A</option>
+                        <option value="3.5">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.5">C+</option>
+                        <option value="2">C</option>
+                        <option value="0">F</option>
+                    </select>
+                    <label for="credits1">Credits:</label>
+                    <input type="number" id="credits1" class="credits">
+                </div>
+            </form>
+        </div>
+        <button type="button" class="add-course-button" onclick="addCourse()">Add Another Course</button>
+        <button type="button" class="calculate-gpa-button" onclick="calculateGPA()">Calculate GPA</button>
+        <h2>Your GPA is: <span id="gpaResult">0.00</span></h2>
+        <footer>
+            <p>Developed by Muhammad Umair Akram</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
